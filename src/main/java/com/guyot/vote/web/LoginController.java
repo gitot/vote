@@ -22,7 +22,7 @@ public class LoginController {
                              BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             LoginResult result = new LoginResult();
-            result.setMsg(bindingResult.toString());
+            result.setMsg("用户名和密码不能为空");
             result.setSuccess(false);
             return result;
         }
